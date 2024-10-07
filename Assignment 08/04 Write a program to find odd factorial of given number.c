@@ -32,7 +32,7 @@ int main()
 
     iRet=OddFactorial(iValue);
 
-    printf("Even Factorial number is %d",iRet);
+    printf("Odd Factorial number is %d",iRet);
 
     return 0;
 }
