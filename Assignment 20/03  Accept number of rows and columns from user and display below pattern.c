@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<conio.h>
+
+void Pattern(int iRow,int iCol)
+{
+    int i=0,j=0,No=1;
+    char character='a';
+
+    for(i=1;i<=iRow;i++)
+    {
+        for(j=1,character='a',No=1;j<=iCol;j++,character++,No++)
+        {
+            if(i%2!=0)
+            {
+                printf("%c",character);
+
+            }
+            else
+            {
+
+                printf("%d",No);
+            }
+        }
+        printf("\n");
+    }
+
+
+}
+int main()
+{
+    int iValue1=0,iValue2=0;
+
+    printf("Enter number of rows and columns\n");
+    scanf("%d%d",&iValue1,&iValue2);
+
+    Pattern(iValue1,iValue2);
+
+    return 0;
+}
+
